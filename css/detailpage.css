@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration: none;}
+/*商品区*/
+/*top---食品饮料*/
+#pamper #pam-top{background: #f2f2f2;height: 40px;line-height: 40px;color:#666;font-size: 12px;font-family: tahoma,arial,"Microsoft YaHei"}
+#pamper #pam-top a{color:#666;font-size: 12px;font-family: tahoma,arial,"Microsoft YaHei"}
+#pamper #pam-top a:hover{color: #c81623}
+#pamper #pam-top a.first{font-weight: bold;font-size: 14px}
+#pamper #pam-top span{padding: 0 8px;font-size: 12px;font-family:simsun;color:#666}
+/*mid 商品展示*/
+.pampers .mid{background: #f2f2f2;}
+.pampers .mid .product{height: 490px;background: #fff;padding: 10px 0;border-bottom: 1px solid #f2f2f2}
+/*mid 的left  图片*/
+.pampers .mid .left{float: left;font-size: 0;height: 489px;margin:10px 0 10px 18px;width: 352px;text-align: center;}
+.pampers .mid .big-pic{height: 352px;width: 352px;margin-bottom: 20px;position: relative;}
+.pampers .mid .big-pic img{border: 1px solid #eee;}
+.pampers .mid .big-pic .zoom_pic{width: 540px;height: 540px;position: absolute;top:0;left: 360px;display: none;overflow: hidden;z-index: 100;border: 1px solid #ccc;}
+.pampers .mid .big-pic .zoom_pic img{position: absolute;top: 0;left: 0;}
+.pampers .mid .big-pic span{display: block;position: absolute;top:0;left: 0;width: 100px;height: 100px;background: orangered;opacity: .4;display: none;}
+.pampers .mid .pic-list{position: relative;font-size: 0;margin-bottom: 20px;}
+.pampers .mid .left ul{display: inline-block;width: 300px;overflow: hidden;height: 54px;}
+.pampers .mid .pic-list li{float: left;margin: 0 2px;width: 51px;height: 50px;border: 2px solid #fff;}
+.pampers .mid .pic-list li.ac{border: 2px solid #c81623;}
+.pampers .mid .pic-list li img{width: 100%;height: 100%;}
+.pampers .mid .pic-list .prebtn{background-image: url(../images/prebtn.png);width: 22px;height: 32px;position: absolute; left:0;top:11px}
+.pampers .mid .pic-list .prebtn.hov{background-image: url("../images/hover-prev.png")}
+.pampers .mid .pic-list .nextbtn{background-image: url(../images/nextbtn.png);width: 22px;height: 32px;position: absolute; right:0;top:11px}
+.pampers .mid .pic-list .nextbtn.hov{background-image: url("../images/hover-next.png")}
+.pampers .mid .left .product_code{float: left;width: 102px;height: 12px;line-height: 12px;font-size: 12px;color: #636c67;}
+.pampers .mid .left .link{float: right;width: 144px;height: 12px;line-height: 12px;font-size: 12px}
+.pampers .mid .left a{padding: 0 5px;color: #636c67;}
+.pampers .mid .left a:hover{color: #c81623 }
+.pampers .mid .left .heart{background: url(../images/heart.png) no-repeat -46px -24px;width: 14px;height: 14px;display: inline-block;}
+.pampers .mid .left .contact{background: url(../images/heart.png) no-repeat -44px -38px;width: 14px;height: 14px;display: inline-block;}
+/*mid 的middle*/
+.pampers .mid .middle{width: 590px;margin-left: 18px;margin-right: 18px;float: left}
+/*mid 的middle 标题以及文字 价格部分*/
+.pampers .mid .middle h4{font-size: 16px;font-family: Arial,"microsoft yahei";color: #666;padding-top: 10px;line-height: 28px;margin-bottom: 5px}
+.pampers .mid .middle p{margin-bottom: 5px;overflow: hidden;white-space:normal;color: #e4393c;font-size: 12px;font-family: tahoma,arial,"Microsoft YaHei"}
+.pampers .mid .middle .pri-com{height: 50px;background:#f2f2f2 ;padding-left: 10px;font-family: "simsun";color: #666;font-size: 12px;margin-bottom: 15px;}
+.pampers .mid .middle .price{float:left;}
+.pampers .mid .middle .price span{line-height: 50px;vertical-align: middle;}
+.pampers .mid .middle .price .big{font-size: 22px;color:#E4393C;font-weight: bold;}
+.pampers .mid .middle .pri-com .comment{float: right;border-left: 1px solid #e6e6e6;text-align: center;margin:10px 0;line-height: 16px;padding: 0 10px;}
+.pampers .mid .middle .pri-com .comment span{color: #265c8b}
+.pampers .mid .middle .delivery {height: 55px;padding-bottom: 3px;border-bottom: 1px dotted #e4e4e4;position: relative}
+.pampers .mid .middle .delivery p{color: #666;font-size: 12px;font-family: "Microsoft YaHei";height: 24px;line-height: 18px}
+/*mid 的middle 选择地址*/
+.pampers .mid .middle .delivery .province{display: inline-block;height: 20px;border: 1px solid #ccc;position: relative;text-align: center;padding-left: 8px;padding-right: 23px;}
+.pampers .mid .middle .delivery .box1{position: absolute;top: 21px;left: 69px;background: #fff;width: 525px;padding: 15px 16px;border: 1px solid #ccc;border-top: none;display: none;}
+.pampers .mid .middle .delivery .box1 .blank{position: absolute;height: 0;border-top: 1px solid #ccc;top: 0;right: 0px;}
+.pampers .mid .middle .delivery .box1 .downline1{border-bottom: 2px solid salmon;height: 0;line-height: 0;margin-top: -7px;margin-left: -10px}
+.pampers .mid .middle .delivery .box1 p{height: 35px;line-height: 35px;font-size: 12px;font-weight: bold}
+.pampers .mid .middle .delivery .box1 p span{display: inline-block;width: 160px;height: 31px;font-size: 14px;color: #1BBBE4;border: 2px solid #ccc;line-height: 35px;margin-right: 4px;border-bottom: 2px solid salmon;text-align: center;}
+.pampers .mid .middle .delivery .box1 p span.acspan{border: 2px solid salmon;border-bottom: 2px solid #fff;}
+.pampers .mid .middle .delivery .box1 ul{width: 525px;margin-top: 8px;}
+.pampers .mid .middle .delivery .box1 ul li{float: left;height:24px;text-align: center;line-height: 24px;margin:5px 18px 0 0;cursor: pointer;padding: 0 3px;font-size: 14px;width: 100px;overflow: hidden }
+.pampers .mid .middle .delivery .box1 ul li:hover{background: #E4393C;color: #fff;}
+.pampers .mid .middle .delivery .box1 i{font-style: normal;font-family: Consolas;display: inline-block;overflow: hidden;width: 19px;height: 16px;font-size: 32px;margin-left: 330px;cursor: pointer;}
+.pampers .mid .middle .delivery .box1 i.iac{height: 10px;line-height: 4px}
+.pampers .mid .middle .delivery .province i{font-style: normal;font-family: Consolas;display: inline-block;overflow: hidden;width: 19px;height: 16px;line-height: 0px;font-size: 32px;position: absolute;right: 4px;bottom:-3px;
+    transition: .2s ease;
+    -ms-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;}
+.pampers .mid .middle .delivery .province i.iac{transition: .2s ease;
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+bottom: 8px;}
+/*mid 的middle 选择 地址那一排，除了选择地址*/
+.pampers .mid .middle .delivery .l{margin:0 8px 0 12px ;}
+.pampers .mid .middle .delivery .yohuo{margin: 0 5px;font-weight: bold;font-size: 14px;}
+.pampers .mid .middle .delivery .service1{margin:0 3px 0 12px;}
+.pampers .mid .middle .delivery .panda{color: #c81623}
+/*mid 的middle选择尺寸 */
+.pampers .mid .middle .size{font-size: 11px;font-family: "Microsoft YaHei"; padding-top: 16px;line-height: 30px;margin-bottom: 35px;}
+.pampers .mid .middle .size span{display: block;float: left;padding:0 8px 0 9px;width: 53px;}
+.pampers .mid .middle .size .variety{float: left;width: 515px;}
+.pampers .mid .middle .size .variety li{float: left;height: 24px;border: 1px solid #cacaca;margin:0 8px 5px 0;font-size: 12px;padding: 0 5px;line-height: 24px;cursor: pointer}
+.pampers .mid .middle .size .variety li.ac{border: 2px solid #c81623;height: 22px;line-height: 22px;padding: 0 4px;}
+/*mid 的middle 数量加减*/
+.pampers .mid .middle .num .box{float: left;margin-left: 12px;width: 35px;height: 34px;border: 1px solid #c9c9c9;position: relative;line-height: 34px;padding-left:14px;margin-right: 10px;}
+.pampers .mid .middle .num .box input{width: 33px;height: 32px;border: none}
+.pampers .mid .middle .num .box button{border: none;width: 15px;height: 17px;border-left: 1px solid #c9c9c9;position: absolute;top: 0;right: 0;font-size: 12px;text-align: center;}
+.pampers .mid .middle .num .box .reduce{top: 17px;right: 0;border-top: 1px solid #c9c9c9;}
+.pampers .mid .middle .num .join{width: 135px;height: 36px;background: #d42e30;text-align: center;line-height: 36px;margin-left: 73px;cursor: pointer;font-size: 18px;color: #fff;font-weight: bold;}
+.pampers .mid .middle .num span{margin-top: 25px;display: block;font-size: 12px;color: #646464;padding-left: 12px;}
+/*mid 的right*/
+.pampers .mid .right{margin: 20px 0 0 0;float: left;width: 194px;}
+.pampers .mid .right a{color: #666;}
+/*mid 的right 图标*/
+.pampers .mid .right .log{width: 58px;height: 54px;padding:15px 65px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0;}
+.pampers .mid .right .log img{width: 74px;height: 54px;}
+/*mid 的right 店名*/
+.pampers .mid .right .store{height: 37px;font-size: 12px;color: #1f5378;padding-top:15px;padding-left: 10px; }
+.pampers .mid .right .store p{width: 51px; height: 17px;background: #ea4148;color: #fff;font-size: 11px;display: inline-block;padding-left: 3px;margin-left: 8px;border-radius: 3px;}
+/*mid 的right 联系供应商那四个*/
+.pampers .mid .right .item li{width: 89px;height: 28px;border: 1px solid #cdcdcd;float: left;margin-bottom: 12px;font-size: 12px;font-family: "Microsoft YaHei";color: #5f5f5f;line-height: 28px;background:#f9f9f9;padding-top: 5px;vertical-align: top;}
+.pampers .mid .right .item p{display: inline-block;line-height: 17px;height:17px;vertical-align: 3px;}
+.pampers .mid .right .item li.cont{padding-left: 24px;width: 66px;background:#f9f9f9 url(../images/dongtu.gif) no-repeat 4px 7px;line-height: 23px}
+.pampers .mid .right .item li.one{margin-right: 7px;}
+.pampers .mid .right .item li span{width: 17px;height: 18px;display: inline-block;background: url("../images/jingling.png") no-repeat 0 0;margin: 0 5px 0 9px;}
+.pampers .mid .right .item .three{background-position: 0px -18px;height: 16px}
+.pampers .mid .right .item .four{background-position: -16px -18px;height: 16px}
+/*mid 的right 服务支持*/
+.pampers .mid .right .serve-support{padding-top: 4px;line-height: 27px;font-size: 12px;padding-left: 12px;}
+.pampers .mid .right .serve-support p{color: #626262;font-family: "microsoft yahei"}
+.pampers .mid .right .serve-support span{padding-left: 20px;display: inline-block;background:url("../images/night_21.jpg") no-repeat 0 center}
+.pampers .mid .right .serve-support .night{padding-right: 50px;background:url("../images/night_18.jpg") no-repeat 0 center }
+/*bot*/
+.pampers .bot{height: 303px;}
+.pampers .bot-inner{margin: 10px 0 30px 0;height: 264px;border: 1px solid #dbdbdb;border-top: 2px solid #9c9c9c;width:1208px;}
+/*推荐配件、人气单品的选项卡*/
+.pampers .bot .switchover{height: 29px ;background: #f7f7f7;border-bottom: 1px solid #dbdbdb;}
+.pampers .bot .switchover ul{float: left;height: 29px;}
+.pampers .bot .switchover li{float: left;height: 28px;width: 85px;border-right: 1px solid #dedede;text-align: center;line-height: 29px;font-size: 16px;color: #666;border-top: 2px solid transparent}
+.pampers .bot .switchover li.switch-ac{border-top: 2px solid #c81623;height: 26px;margin-top: -2px;padding-top: 2px;background: #fff;color:#c81623; }
+.pampers .bot .switchover-cont li{float: left;width: 121px;padding: 27px 37px 0 37px;font-size:12px;line-height: 18px;font-family: "microsoft yahei";}
+.pampers .bot .switchover-cont li .pic{width: 120px;height: 110px;}
+.pampers .bot .switchover-cont li .pic img{width: 100%;height: 100%;}
+.pampers .bot .switchover-cont li p{padding-top: 24px;color: #595959;}
+.pampers .bot .switchover-cont li span{color:#b73c34;text-align: center;display: inline-block;}
+.hide{display:none; }
+.floor1 .top .nav{display: none;z-index:110;position: absolute}
+
+

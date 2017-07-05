@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*样式预设*/
+.floor1 .banner .btn ul .red{background:#b61b1f;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,input,dl,dd,button{margin:0;padding:0;}
+ul,dl,dd{list-style:none;}
+a{text-decoration:none;}
+img,input,button{border:none;}
+body{font-family:arial,"Microsoft YaHei","宋体";}
+.inner{width:1210px;margin:0 auto;}
+input,select{outline: none;}
+.fixnav{width:6px;height:100%;position:fixed;right:0;bottom:0;background:#7a6e6e;z-index:4;}
+
+/*右侧固定定位*/
+.fixnav li a{height:35px;width:35px;background:#7a6e6e url(../images/toolbars.png) no-repeat -87px -175px;border-radius:3px 0 0 3px;position:fixed;display:block;z-index: 80}
+.fixnav .icon1 a{right:0;top:300px;}
+.fixnav .icon2 a{background-position:-49px 0;right:0;top:336px;}
+.fixnav .icon3 a{background-position:-49px -50px;right:0;top:372px;}
+.fixnav .icon4 a{background-position:-49px -100px;right:0;top:408px;}
+.fixnav .icon5 a{background-position:-189px -150px;right:0;top:444px;}
+.fixnav .icon6 a{background-position:-49px -150px;right:0;top:480px;}
+.fixnav .icon7 a{background-position:-49px -250px;right:0;bottom:36px;}
+.fixnav .icon8 a{background-position:-49px -300px;right:0;bottom:0;}
+.fixnav li a i{display:inline-block;height: 35px;width: 10px;float: left;}
+.fixnav span{background:#c81623;width:20px;height:35px;color:#fff;font-size:12px;line-height:39px;text-align:center;border-radius:3px 0 0 3px;position:fixed;display:none;z-index:70;}
+.fixnav .icon1 span{right:33px;top:300px;}
+.fixnav .icon2 span{right:33px;top:336px;}
+.fixnav .icon3 span{right:33px;top:372px;}
+.fixnav .icon4 span{right:33px;top:408px;}
+.fixnav .icon5 span{right:33px;top:444px;}
+.fixnav .icon6 span{right:33px;top:480px;}
+.fixnav .icon7 span{right:33px;bottom:36px;}
+.fixnav .icon8 span{right:33px;bottom:0;}
+
+/*左侧固定定位*/
+.fixnav2{width:30px;height:347px;position:fixed;left:50%;bottom:20%;margin-left:-640px;text-align:center;color:#666;display: none;}
+.fixnav2 li{height:28px;width:15px;border-bottom:1px dotted #c2c2c2;line-height:28px;font-size:12px;cursor: pointer;}
+.fixnav2 li span{width:30px;margin-left:-7px;line-height:28px;display:block;}
+.fixnav2 li a{display:none;width:30px;margin-left:-7px;height:28px;color:#c81623;background: cornflowerblue;}
+.fixnav2 li:hover span{display:none;}
+.fixnav2 li:hover a{display:block;}
+.clearfix:after{content:"200B";height:0;font-size:0;display:block;clear:both;}
+
+/*头部送至北京 到全部商品分类*/
+/*头部的顶部*/
+.header{border-bottom:2px solid #b1191a}
+.header .top{background:#f1f1f1;height:30px;color:#666;line-height:30px;}
+.header .top .inner{height:30px;}
+.header .top .left{float:left;font:12px/30px "宋体";}
+.header .top i{font-style:normal;line-height:0;width:10px;height:5px;overflow:hidden;margin-left:9px;display:inline-block;font-family:"consolas";text-decoration:none;}
+.header .top .right{float:right;font:12px/30px "宋体";}
+.header .top .right ul{height:30px;}
+.header .top .right li{float:left;position: relative;}
+.header .top .right li .myjd_none{position: absolute;left: 0;top: 30px;display: none;background: #fff;z-index: 2;padding: 12px;border: 1px solid #e6e6e6;border-top: none;}
+.header .top .right li .myjd_none .blank{position: absolute;top: 0;right: 0;height: 0;width: 221px;border-top: 1px solid #e6e6e6;}
+.header .top .right li .myjd_none p{width: 280px;height: 30px;line-height: 30px;}
+.header .top .right li .myjd_none p span{width:140px;display: inline-block; }
+.header .top .right .line{width:1px;height:12px;background:#ddd;margin-top:9px;}
+.header .top .right li a{padding:0 8px;color:#666;display:inline-block;height:29px;border: 1px solid transparent;border-bottom: none;}
+.header .top .right li .l-fir{font-family:Arial}
+.header .top .right li .fir{padding:0;}
+.header .top .right li .fir span{padding:0 3px;}
+.header .top .right li .active{padding-left:5px;color:#f10215;}
+.header .top .right li .phone{padding-left:27px;background:url(../images/jd2015img.png) no-repeat 8px 5px}
+.header .top .right .sub.subac{background-color:#fff;color:#c81623;border: 1px solid #e6e6e6;border-bottom: none;}
+.header .top .right li a:hover{color:#c81623}
+.header .top .right li .phone:hover{background-position:8px -20px}
+/*头部的中间 京东loge那一行*/
+.header .mid{height:100px}
+.header .mid .loge{float:left;padding:17px 92px 15px 0}
+.header .mid .search{float:left;padding-top:25px;position: relative}
+.header .mid .search .text1{width:450px;height:32px;border:2px solid #b61d1d;float:left;
+padding-left:4px;color:#666;font:13px/32px "Microsoft YaHei",Arial;outline: none;}
+.header .mid .search .text2{width:82px;height:36px;float:left;font:16px/36px "Microsoft YaHei",Arial;color:#fff;background:#b61d1d;cursor:pointer;}
+.header .mid .search .sea-nav{height:28px;}
+.header .mid .search .sea-nav a{float:left;font:12px/28px "宋体";line-height:28px;margin-right:11px;color:#666;}
+.header .mid .search .sea-nav .act{color:#c81623}
+.header .mid .search .sea-nav a:hover{color:#c81623}
+#ui-id-1{position: absolute;left: 0;top:61px;width: 453px;border: 1px solid #1c4257;background: #eee;z-index: 2}
+#ui-id-1 li{line-height: 30px;font-size: 12px;padding:0 10px;}
+.header .mid .buy{float:right;height:34px;background:#f9f9f9 url(../images/jd2015img.png) no-repeat 19px -48px;border:1px solid #dfdfdf;margin:25px 65px 0 0;position:relative;padding-right:11px;}
+.header .mid .buy a{font:12px/34px "宋体";padding-left:43px;padding-right:21px;color:#666;}
+.header .mid .buy i{color:#a2a2a2;font-family:"consolas";font-style:normal;}
+.header .mid .buy .number{padding:0 5px;height:14px;background:#c81623;font:12px/14px "宋体";color:#fff;text-align:center;border-radius:6px 6px 6px 0;position:absolute;top:-4px;left:104px;}
+/*头部的底部 全部商品分类那一行*/
+.header .bot{height:44px;}
+.header .bot .all{float:left;width:200px;height:44px;background:#b1191a;line-height:44px;color:#fff;font-size:16px;padding-left:10px;}
+.header .bot .all i{font-style: normal;font-family: Consolas;display: inline-block;overflow: hidden;margin-left: 69px;width: 20px;height: 11px;line-height: 4px;font-size: 32px;transition: .2s ease;
+    -ms-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;}
+.header .bot .all1 i.aci{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);}
+.header .bot .nav{float:left;height:44px;}
+.header .bot .nav li{float:left;line-height:44px;padding:0 20px;font-size:16px;}
+.header .bot .nav li a{color:#333;}
+.header .bot .nav li a:hover{color:#c81623;}
+/*第一层楼   轮播图那一层*/
+/*第一层楼 左侧导航*/
+.floor1 .nav{float:left;width:210px;background:#c81623;border-bottom:1px solid #c81623;position:absolute;}
+.floor1 .nav .li1{color:#fff;height:31px;line-height:31px;border-left:1px solid transparent;}
+.floor1 .nav .li1:hover{background:#f7f7f7;border-left:1px solid #c81623;color:#c81623;}
+.floor1 .nav .li1:hover a{color:#c81623;}
+.floor1 .nav h3{font-weight:normal;padding:0 11px;width:171px;height:31px;overflow:hidden;font-size:12px;white-space:nowrap;float:left;}
+.floor1 .nav h3 a{font-size:14px;color:#fff;}
+.floor1 .nav .li1 i{font-size:9px;font-family:consolas;float:left;font-style:normal;}
+.floor1 .son{background:#f7f7f7;border:1px solid #b61d1d;width:959px;min-height:426px;position:absolute;left:209px;top:-1px;z-index:2;padding:20px;display:none;border-top:none;} 
+.floor1 .son .left{float:left;width:710px;;}
+.floor1 .son .left .brand{width:710px;height:24px;overflow:hidden;}
+.floor1 .son .left .brand a{display:block;float:left;background:#7c7171;height:24px;line-height:24px;font-size:12px;color:#fff;padding:0 31px 0 7px;margin-right:10px;position:relative;color:#fff;}
+.floor1 .son .left .brand a i{width:23px;height:22px;background:#5c5251;text-align:center;line-height:22px;font-size:12px;font-family:Consolas;position:absolute;right:0;bottom:0;}
+.floor1 .son .left .brand a:hover{background:#c81623;}
+.floor1 .son .left .brand a:hover i{background:#b1191a;}
+.floor1 .son .left .smallnav{padding-top:6px;font-family:"Microsoft YaHei"}
+.floor1 .son .left .smallnav dt{float:left;width:84px;}
+.floor1 .son .left .smallnav dt a{font-size:12px;font-weight:bolder;height:31px;line-height:31px;padding-top:5px;text-align:right;display:block;padding-right:30px;position:relative;width:54px;overflow:hidden;white-space:nowrap;color:#666;}
+.floor1 .son .left .smallnav dt i{position:absolute;right:17px;top:5px;color:#666;}
+.floor1 .son .left .smallnav dt a:hover{color:#c81623;}
+.floor1 .son .left .smallnav dt a:hover i{color:#c81623;}
+.floor1 .son .left .smallnav dd{float:left;width:620px;padding:10px 0 2px 0;;border-bottom:1px solid #eee;}
+.floor1 .son .left .smallnav dd a{display:block;float:left;font-size:12px;height:16px;line-height:16px;padding:0 8px;border-left:1px solid #e0e0e0;margin-bottom:8px;white-space:nowrap;color:#666;}
+.floor1 .son .left .smallnav dd a:hover{color:#c81623;}
+.floor1 .son .right{float:right;width:168px;}
+.floor1 .son .right li{float:left;padding:0 0 1px 1px;width:83px;height:35px;overflow:hidden;}
+.floor1 .son .right li a{font-size:0;}
+.floor1 .son .right .pic{padding-top:10px;}
+.floor1 .son .right .pic1{margin-bottom:1px;width:168px;height:132px;overflow:hidden;}
+.floor1 .son .right .pic1 a{font-size:0;}
+/*第一层楼 中间的轮播图*/
+.floor1 .banner{width:730px;height:454px;float:left;margin:12px 10px 0 219px;position:relative;overflow:hidden;}
+.floor1 .banner .btn{position:absolute;left:300px;bottom:8px;width:132px;}
+.floor1 .banner .btn ul{height:18px;}
+.floor1 .banner .btn ul li{float:left;width:18px;height:18px;background:#3e3e3e;border-radius:50%;line-height:18px;text-align:center;margin-right:4px;font-size:12px;font-family:"arial";color:#fff;cursor: pointer}
+.floor1 .banner .prebtn{width: 30px;height: 50px;padding-top: 19px;background: #000000;position: absolute;left: 0;top:197px;text-align: center;color:#fff;font-size: 20px;font-family: Consolas;cursor: pointer;display: none;}
+.floor1 .banner .nextbtn{width: 30px;height: 50px;background: #000000;position: absolute;right: 0;top:197px;text-align: center;padding-top: 19px;display: none;color:#fff;font-size: 20px;font-family: Consolas;cursor: pointer;}
+/*第一层楼的右侧*/
+.floor1 .txt{float:left;width:250px;margin-top:12px;}
+.floor1 .txt dl{border:1px solid #e4e4e4;height:163px;overflow:hidden;position: relative;}
+.floor1 .txt dt{height:32px;padding:0 15px;border-bottom:1px dotted #e8e8e7;line-height:32px;font-size:15px;font-weight:normal;margin-bottom:5px;}
+.floor1 .txt dt h3{float:left;}
+.floor1 .txt dt a{font-size:12px;float:right;color:#666;}
+.floor1 .txt dt a:hover{color:#b61d1d;}
+.floor1 .txt dd{height:24px;width:228px;overflow:hidden;white-space:nowrap;position: relative;top: 0px;left:0;float: left;}
+.floor1 .txt dd a{display:block;line-height:24px;font-size:12px;font-family:"宋体";padding:0 15px;color:#666;}
+.floor1 .txt dd a:hover{color:#b61d1d;}
+.floor1 .txt dd a span{font-weight:bolder;padding-right:5px;}
+.floor1 .txt .pic-text{width:248px;height:208px;border:1px solid #e4e4e4;border-top:none;overflow:hidden;position: relative;}
+.floor1 .txt .pic-text .pic-text-list{width:252px;}
+.floor1 .txt .pic-text .pic-text-list li{border-bottom:1px solid #e4e4e4;border-right:1px solid #e4e4e4;float:left;}
+.floor1 .txt .pic-text .pic-text-list li a{display:block;width:62px;height:70px;text-align:center;position:relative;float:left;}
+.floor1 .txt .pic-text .pic-text-list li i{display:block;width:25px;height:25px;margin:13px 0 0 18px;;background:url(../images/icon1.png) no-repeat left top;}
+.floor1 .txt .pic-text .pic-text-list .icon2 i{background-position:0 -25px;}
+.floor1 .txt .pic-text .pic-text-list .icon3 i{background-position:0 -50px;}
+.floor1 .txt .pic-text .pic-text-list .icon4 i{background-position:0 -75px;}
+.floor1 .txt .pic-text .pic-text-list .icon5 i{background-position:0 -100px;}
+.floor1 .txt .pic-text .pic-text-list .icon6 i{background-position:0 -125px;}
+.floor1 .txt .pic-text .pic-text-list .icon7 i{background-position:0 -150px;}
+.floor1 .txt .pic-text .pic-text-list .icon8 i{background-position:0 -175px;}
+.floor1 .txt .pic-text .pic-text-list .icon9 i{background-position:0 -250px;}
+.floor1 .txt .pic-text .pic-text-list .icon10 i{background-position:0 -200px;}
+.floor1 .txt .pic-text .pic-text-list .icon11 i{background-position:0 -275px;}
+.floor1 .txt .pic-text .pic-text-list .icon12 i{background-position:0 -225px;}
+.floor1 .txt .pic-text .pic-text-list li span{display:block;padding-top:3px;height:30px;line-height:30px;font-size:14px;color:#666;}
+.floor1 .txt .pic-text .pic-text-list li a:hover span{color:#b61d1d;}
+.floor1 .txt .pic-text .four{width: 250px;height: 209px;position: absolute;top: 30px;left: 0;display: none;}
+.floor1 .txt .pic-text .four a{color: #666;}
+.floor1 .txt .pic-text .four .season{color:#527cdb;font-size: 12px;}
+.floor1 .txt .pic-text .four .season:hover{color:#c81623;}
+.floor1 .txt .pic-text .four a:hover{color:#b61d1d;}
+.floor1 .txt .pic-text .four .title{width: 251px;height: 18px;}
+.floor1 .txt .pic-text .four .title span a{display: inline-block;line-height: 18px;width: 41px;border-right: 1px solid #e6e6e6;font-size: 12px;padding-left: 20px;cursor: pointer;float: left;border-top: 2px solid transparent;}
+.floor1 .txt .pic-text .four .title span a.acc{border-top: 2px solid #e01222;}F
+.floor1 .txt .pic-text .four .title .game a{border-right: none;}
+.floor1 .txt .pic-text .four .close{height:23px;line-height: 23px;text-align: right;color: #666;padding-right: 24px;cursor: pointer; }
+.floor1 .txt .pic-text .four .close:hover{color:#b61d1d;}
+.floor1 .txt .pic-text .four .phofare{height: 160px;}
+.floor1 .txt .pic-text .four .phofare .charge{height: 28px;line-height: 28px;}
+.floor1 .txt .pic-text .four .phofare .charge span a{width: 61px;margin-left: 8px;display:inline-block;position: relative;font-size: 14px;color: #333;cursor: pointer;height: 20px;line-height: 20px;padding: 0 4px;}
+.floor1 .txt .pic-text .four .phofare .charge1 span a{margin-left: 4px}
+.floor1 .txt .pic-text .four .phofare .charge3 span a{width: 29px;margin-left: 31px;}
+.floor1 .txt .pic-text .four .phofare .charge span #big{width: 74px}
+.floor1 .txt .pic-text .four .phofare .charge span #big1{width: 74px;margin: 0 22px}
+.floor1 .txt .pic-text .four .phofare .charge span a.b6{color:#fff;background:#b61d1d;position: relative }
+.floor1 .txt .pic-text .four .phofare .ree{color: red;font-size: 12px;margin: 0;padding: 0;}
+.floor1 .txt .pic-text .four .phofare .charge span a.b6::after{position: absolute;top:20px;left: 43%;border: 5px solid transparent;border-top: 5px solid #b61d1d;content: ""; }
+.floor1 .txt .pic-text .four .phofare .purchase{position: relative;}
+.floor1 .txt .pic-text .four .phofare .purchase p{height: 23px;line-height: 23px;font-size: 14px;color: #333;padding: 0 10px;margin: 4px 0;position: relative;}
+.floor1 .txt .pic-text .four .phofare .purchase p .hotel{width: 102px;padding-left: 19px}
+.floor1 .txt .pic-text .four .phofare .purchase .go span{position: absolute;top: 1px;left: 21px;display: inline-block;width: 51px;height: 20px;text-align: center;background: #e6e6e6;font-size: 12px;color: #ccc;border: 1px solid #ccc;border-right: none;}
+.floor1 .txt .pic-text .four .phofare .purchase .go input{position: absolute;top: 1px;left: 62px;width: 63px;height: 20px;border: 1px solid #ccc;border-left: none;padding: 0 7px;}
+.floor1 .txt .pic-text .four .phofare .purchase .way input{width: 13px;height: 20px;margin: 0;padding: 0;vertical-align: middle;margin-left: 9px;}
+.floor1 .txt .pic-text .four .phofare .purchase .value{padding: 0 19px;}
+.floor1 .txt .pic-text .four .phofare .purchase p span{color:#b61d1d }
+.floor1 .txt .pic-text .four .phofare .purchase p input{border: 1px solid #ccc;width: 96px;height: 20px;padding: 0 7px;margin: 0 10px;}
+.floor1 .txt .pic-text .four .phofare .purchase .present{height: 23px;width: 70px;background:#e01222;margin-left:10px; color: #fff; margin-top: 4px;}
+.floor1 .txt .pic-text .four .phofare .purchase .present1{margin-left:19px;}
+.floor1 .txt .pic-text .four .phofare .purchase li{position: absolute;top:0;left: 0; }
+.floor1 .txt .pic-text .four .phofare .purchase li.hide{left: 250px;}
+.floor1 .txt .pic-text .four .phofare .purchase select{vertical-align: middle}
+.floor1 .txt .pic-text .four .phofare .purchase .number input{width: 105px;}
+.floor1 .txt .pic-text .four .phofare .purchase .pic{width: 104px;height: 117px;float: left;margin: 10px;}
+.floor1 .txt .pic-text .four .phofare .purchase .pic1{margin: 0;margin-left: 19px;}
+.floor1 .txt .pic{padding-top:5px;width:250px;height:75px;overflow:hidden;}
+/*第一层楼的底部*/
+.floor1 .bot{height:164px;padding-top:10px;}
+/*第一层楼的左侧的闹钟*/
+.floor1 .bot .timer{float:left;width:210px;height:151px;text-align:center;background:url("../images/section_2_07.jpg");position: relative;}
+.floor1 .bot .timer .round1{height: 80px;width: 80px;border-radius: 50%;background: #fff;position: absolute;top: 35px;left: 65px;}
+.floor1 .bot .timer .round2{height: 60px;width: 60px;border-radius: 50%;background:url("../images/section_2_07.jpg");position: absolute;top: 45px;left: 75px;}
+.floor1 .bot .timer .round2 .line-f{z-index: 10;display: block;  position: absolute;  left: 27px;  top: 3px; width: 4px;  height: 20px;background: #fff;border-radius: 100%;-webkit-transform-origin:50% 20px;}
+.floor1 .bot .timer .round2:before{ transform-origin: 50% 25px; -webkit-animation: anim_l 4s linear infinite;  content: " ";  display: block; position: absolute;  width: 3px;  background: #fff;  top: 3px;left: 27px; height: 25px;border-radius: 100%;}
+.floor1 .bot .timer .round3 .line-s{z-index: 10;display: block;  position: absolute;  left: 23px;  top: 5px; width: 4px;  height: 20px;background: #fff;border-radius: 100%;-webkit-transform-origin:10% 20px;}
+@keyframes anim_l{
+    from{ transform:rotate(0deg) ; -webkit-transform:rotate(0deg) ;}
+    to{ transform:rotate(360deg) ; -webkit-transform:rotate(360deg) ;}
+}
+.floor1 .bot .timer .round3{height: 10px;width: 10px;border-radius: 50%;background: #fff;position: absolute;top: 70px;left: 100px;}
+.floor1 .bot .timer .round3:before{ transform-origin: 50% 25px; -webkit-animation: anim_l 8s linear infinite;  content: " ";  display: block; position: absolute;  width: 6px;  background: #fff;  top: -20px;left: 2px; height: 25px;border-radius: 100%;}
+.floor1 .bot .timer .round4{height: 10px;width: 10px;border-radius: 50%;background: #777;position: absolute;top: 70px;left: 65px;z-index: 4}
+/*第一层楼的右侧的图片*/
+.floor1 .bot ul{float:left;height:161px;}
+.floor1 .bot ul li{float:left;margin-right:1px;}
+.floor1 .bot ul li img{width:249px;}
+.floor1 .bot ul .right{margin-right:0;}
+/*第二层楼*/
+/*第二层楼顶部猜你喜欢那一行*/
+.floor2 .top{padding-top:18px;border-bottom:1px solid #d1d1d1;}
+.floor2 .top h3{float:left;height:20px;line-height:20px;font-size:21px;color:#333;font-weight:normal;background:url(../images/homebg.png) no-repeat 87px -98px;margin:10px 0;width:280px;}
+.floor2 .top a{float:right;display:block;height:20px;line-height:20px;font-size:12px;font-family:"宋体";width:61px;background:url(../images/homebg.png) no-repeat -310px -5px;margin-top:12px;color:#666;}
+.floor2 .top a:hover{color:#b61d1d;background-position:-310px -29px}
+/*第二层楼底部的图片价格*/
+.floor2 ul{width:1208px;height:231px;border:1px solid #ededed;border-top:none;overflow: hidden;}
+.floor2 ul li{float:left;padding:20px 35px 0 35px;width:130px;text-align:center;}
+.floor2 .line{width:1px;height:62px;background:#e6e6e6;margin-top:140px;padding-left:0;padding-right:0;}
+.floor2 li .pic{width:130px;height:130px;overflow:hidden;font-size:0;}
+.floor2 li p{line-height:18px;font-size:12px;text-align:left;height:36px;width:130px;overflow:hidden;padding-top:10px;}
+.floor2 li span{display:block;height:31px;text-align:left;line-height:31px;color:#b51d42;font-size:18px;}
+.floor2 li sub{font-size:14px;}
+.floor2 li a{color:#666;}
+.floor2 li a:hover{color:#b61d1d;}
+/*第三楼---京东品质生活*/
+.floor3{padding-top:22px;}
+/*第三楼顶部的品质生活*/
+.floor3 h3{height:34px;line-height:34px;font-size:20px;color:#333;font-weight:normal;}
+/*第三楼最左边图片*/
+.floor3 .three{width:1208px;height:405px;border:1px solid #ededed;overflow:hidden;}
+.floor3 .three .left{width:403px;float:left;background:#f7f7f7;border-right:1px solid #ededed;}
+.floor3 .three .left .top{border-bottom:1px solid #ededed;}
+.floor3 .three .left a{position:relative;display:block;}
+.floor3 .three .left .top a h4{height:40px;line-height:40px;text-align:center;color:#333;font-size:15px;margin:0 20px;border-bottom:1px dashed #e0e0e0;}
+.floor3 .three .left .top .pic{font-size:0;width:403px;height:205px;overflow:hidden;}
+.floor3 .three .left .txt{position:absolute;left:45px;top:101px;}
+.floor3 .three .txt h5{font-size:16px;color:#333;height:37px;line-height:37px;}
+.floor3 .three .txt p{font-size:12px;color:#333;height:18px;line-height:18px;}
+.floor3 .three .txt span{font-size:12px;color:#c81623;height:18px;line-height:18px;}
+.floor3 .three .left .bot{border-bottom:1px solid #ededed;}
+.floor3 .three .left .b-left{float:left;}
+.floor3 .three .left .b-left a{position:relative;display:block;border-right:1px solid #ededed;}
+.floor3 .three .left .b-right a{border-right:none;}
+.floor3 .three .left .b-left .pic{font-size:0;width:201px;height:158px;overflow:hidden;}
+.floor3 .three .left .b-left .txt{position:absolute;left:10px;top:40px;}
+/*第三楼中间两列的图片*/
+.floor3 .three .mid{width:228px;float:left;border-right:1px solid #ededed;}
+.floor3 .three .mid .top{border-bottom:1px solid #ededed;}
+.floor3 .three .mid .top a{position:relative;display:block;}
+.floor3 .three .mid .top a h4{height:40px;line-height:40px;text-align:center;color:#333;font-size:15px;margin:0 20px;border-bottom:1px dashed #e0e0e0;}
+.floor3 .three .mid .top a .pic{font-size:0;width:228px;height:205px;overflow:hidden;}
+.floor3 .three .mid .top a .txt{position:absolute;left:10px;top:101px;}
+.floor3 .three .mid .bot a .pic{height:158px;}
+.floor3 .three .mid .bot a .txt{position:absolute;left:10px;top:40px;}
+/*第三楼最右侧的loge图标*/
+.floor3 .three .icon{width:171px;float:left;}
+.floor3 .three .icon .icon-l{float:left;border-right:1px dashed #e0e0e0;width:85px;height:381px;margin-top:13px;}
+.floor3 .three .icon .icon-l ul{margin-top:-13px;}
+.floor3 .three .icon .left1 li{border-bottom:1px dashed #e0e0e0;margin-left:11px;}
+.floor3 .three .icon .left1 li a{display:block;font-size:0;text-align:center;margin-left:-11px;width:85px;height:57px;overflow:hidden;}
+.floor3 .three .icon .right1{float:left;}
+.floor3 .three .icon .right1 li{margin-right:11px;border-bottom:1px dashed #e0e0e0;}
+.floor3 .three .icon .right1 li a{margin-right:-11px;font-size:0;display:block;width:85px;height:57px;overflow:hidden;}
+/*第三楼底部的广告 十一家电看京东*/
+.floor3 .bottom{padding-top:20px;width:1210px;height:120px;overflow:hidden;margin-bottom:16px;}
+.floor3 .bottom li{float:left;width:402px;height:120px;overflow:hidden;}
+.floor3 .bottom li a{ont-size:0;}
+/*1F服装鞋包*/
+.inf1{overflow: hidden}
+/*1F服装鞋包顶部--标题*/
+.inf1 .top{border-bottom:1px solid #c81623;}
+.inf1 .top h3{float:left;height:34px;line-height:30px;font-size:20px;color:#333;font-weight:normal;background:url("../images/floor_icon_02.jpg") no-repeat -1px 0;}
+.inf1 .top h3.back{background:url("../images/floor_icon_03.jpg") no-repeat -4px 0;}
+/*1F服装鞋包顶部--标题右侧的导航*/
+.inf1 .top ul{float:right;border-top:1px solid #ededed;height:34px;}
+.inf1 .top ul li{float:left;height:31px;line-height:31px;border-top:3px solid transparent;border-left:1px solid transparent;border-right:1px solid transparent;position:relative;}
+.inf1 .top ul li a{display:block;color:#666;font-size:12px;font-family:"宋体";padding:0 15px;padding-top:1px;}
+.inf1 .top ul li span{width:1px;height:14px;background:#ccc;position:absolute;right:-2px;top:10px;}
+.inf1 .top ul .first{border-left:1px solid #ededed}
+.inf1 .top ul .last{border-right:1px solid #ededed}
+.inf1 .top ul li.change{border-color:#c81623;margin-top:-1px;padding-top:1px;}
+.inf1 .top ul li.change a{height:32px;background:#fff;}
+.inf1 .top ul li.change span{display:none;}
+.inf1 .top ul li:hover{border-color:#c81623;margin-top:-1px;padding-top:1px;}
+.inf1 .top ul li:hover a{height:32px;background:#fff;}
+.inf1 .top ul li:hover span{display:none;}
+/*1f中部*/
+.inf1 .allmid{height:633px;position: relative;}
+.inf1 .mid{height:633px;float: left;position: absolute;top: 0;left: 1210px;}
+.inf1 .mid.show{left: 0;}
+/*1f中部左侧的一大图一小图*/
+.inf1 .mid .left{float:left;width:330px;}
+.inf1 .mid .left .pic{width:330px;height:345px;overflow:hidden;position:relative;}
+.inf1 .mid .left ul{background:rgba(255,255,255,0.50);height:92px;width:330px;position:absolute;left:0;bottom:0;}
+.inf1 .mid .left ul li{float:left;padding:10px 0;width:100px;height:26px;overflow:hidden;}
+.inf1 .mid .left ul li a{display:block;padding-left:31px;font:13px/26px "Microsoft YaHei";background:url(../images/clothesicon.png) no-repeat left top;color:#666;margin-left:25px}
+.inf1 .mid .left ul li a:hover{color:#c81623}
+.inf1 .mid .left ul li .girl{background-position:0 -26px;}
+.inf1 .mid .left ul li .nei{background-position:0 -52px;}
+.inf1 .mid .left ul li .shoe{background-position:0 -78px;}
+.inf1 .mid .left ul li .bao{background-position:0 -104px;}
+.inf1 .mid .left ul li .lv{background-position:0 -130px;}
+.inf1 .mid .left .nav{padding:16px 0;height:96px;background:#eee;}
+.inf1 .mid .left .nav .nav-left{width:118px;padding:0 17px 0 25px;float:left;height:96px;overflow:hidden;}
+.inf1 .mid .left .nav .nav-left a{margin-right:11px;font:12px/24px "宋体";white-space:nowrap;float:left;color:#999;}
+.inf1 .mid .left .nav .nav-left a:hover{color:#c81623;}
+.inf1 .mid .left .nav .nav-left .active{color:#c81623;}
+.inf1 .mid .left .l-bot{width:328px;border:1px solid #ededed;overflow:hidden;border-left:1px solid #f7f5ee;}
+.inf1 .mid .left .l-bot a{font-size:0;}
+/*1f中部中间的三张图*/
+.inf1 .m-mid{float:left;}
+.inf1 .m-mid .pic{border-right:1px solid #ededed;border-bottom:1px solid #ededed;overflow:hidden;}
+.inf1 .m-mid .pic a{font-size:0;}
+.inf1 .m-mid .pic img{width:439px;}
+/*1f中部右侧的七张图*/
+.inf1 .m-right{float:left;}
+.inf1 .m-right li{border-right:1px solid #ededed;border-bottom:1px solid #ededed;overflow:hidden;}
+.inf1 .m-right li img{width:219px;}
+.inf1 .m-right li a{float:left;}
+/*1f底部的商标*/
+.inf1 .bot{margin-top:10px;background:#f7f7f7;padding:13px 0;height:40px;}
+.inf1 .bot li{float:left;padding:0px 10px;border-right:1px dotted #ccc;}
+.inf1 .bot .last{border-right:none;}
+/*服务---多快好省*/
+.inf1 .bot li a{display:block;height:40px;width:100px;overflow:hidden;font-size:0;}
+.service{height:94px;background-color:#f5f5f5;}
+.service ul{margin:20px 0 14px 11px;}
+.service ul li{float:left;width:220px;height:54px;margin:20px 0;padding-right:80px;background:url(../images/nva_bg.png) no-repeat left -130px}
+.service ul .fast{background-position:left -196px;padding-right:85px}
+.service ul .good{background-position:left -258px;padding-right:85px}
+.service ul .save{background-position:left -320px;padding-right:0;}
+/*footer区*/
+.footer{height:385px;}
+/*footer顶部--购物指南*/
+.footer .top{height:188px;border-bottom:1px solid #e5e5e5;}
+.footer .top dl{float:left;width:199px;}
+.footer .top dl dt{height:36px;font:16px/36px "Microsoft YaHei";}
+.footer .top dl dd{height:20px;font:12px/20px "宋体";}
+.footer a{color:#666;}
+.footer a:hover{color:#c81623;}
+.footer .top .last{width:164px;} 
+.footer .top .right{width:185px;padding:0 45px 0 20px;background:url(../images/20130330B_1.png) no-repeat left -132px;height:171px;}
+.footer .top .right dd{height:auto;}
+.footer .top .right .more a{float:right;}
+/*footer底部--关于我们*/
+.footer .bot{text-align:center;padding-top:11px;height:185px;}
+.footer .bot ul li{float:left;font-size:12px;font-family:"宋体";height:20px;line-height:20px;color:#666;}
+.footer .bot ul{display:inline-block;}
+.footer .bot ul li span{padding:0 7px 0 8px;color:#9b669b}
+.footer .bot .top1 li{height:36px;line-height:36px;}
+.footer .bot li a{display:inline-block;}
+.footer .bot .top2 li{height:20px;line-height:20px;}
+.footer .bot li i{display:block;float:left;}
+.footer .bot .mid{height:16px;}
+.footer .bot .jd{height:20px;display:block;}
+.footer .bot .jd li{text-align:center;width:1210px;}
+.footer .bot .last{height:32px;padding:9px 0px;}
+.footer .bot .last li{padding:0 7px 0 6px;}
