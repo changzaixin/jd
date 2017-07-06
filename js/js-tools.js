@@ -1,6 +1,3 @@
-/**
- * Created by hxsd on 2017/05/06.
- */
 
 
 function animate(obj,modeJson,speed,fn){ //对象  要运动的模式  速度
